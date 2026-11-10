@@ -1,0 +1,12 @@
+
+h1.texto_titulo_producto{
+    text-decoration: underline;
+}
+
+p.texto_descripcion{
+    text-decoration: underline;
+}
+
+h2.texto_precio_producto{
+    font-weight: bolder;
+}

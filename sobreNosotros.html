@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilo.css" title="Estilo Principal">
+    <link rel="alternate stylesheet" href="./css/alto-contraste.css" title="Alto Contraste" id="link-contraste">
+</head>
+<body>
+
+    <header>
+        <div id="menuPrincipal">
+            <a href="./index.html"><img src="./img/Logo.png" alt="logo" class="logo"></a>
+            <div id="buscador">
+                <form action="#" method="get">
+                    <input type="text" name="buscador" id="busca">
+                    <button type="button" class="boton_buscar"><img src="./img/search.svg" alt="buscar" class="imagen_buscar"></button>
+                </form>
+            </div>
+            <div id="usuario">
+                <a href="./sesion.html" class="inicio_sesion">
+                    <img src="./img/person.svg" alt="" class="imagen_usuario">
+                    Inicio<br>Sesion
+                </a>
+            </div>
+            <div id="compra">
+                <a href="./comprar.html" class="carrito"><img src="./img/shopping_cart.svg" alt="carrito" class="imagen_carrito"></a>
+            </div>
+            <div id="boton_contraste">
+                <button type="button" class="boton_altoContraste">Alto Contraste</button>
+            </div>
+        </div>
+        <div class="enlaces">
+            <nav>
+                <a href="./lista-productos.html" class="a_enlaces">Mujer</a>
+                <a href="./lista-productos.html" class="a_enlaces">Hombre</a>
+                <a href="./lista-productos.html" class="a_enlaces">Niño/a</a>
+                <a href="./lista-productos.html" class="a_enlaces">Accesorios</a>
+                <a href="./lista-productos.html" class="a_enlaces">Otros</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="nosotros">
+            <div class="columna_izquierda">
+                <div class="imagen">
+                    <img src="./img/nosotros.png" alt="Mujer atendiendo" class="img-nosotros">
+                </div>
+                <div class="mision">
+                    <h2>Nuestra misión</h2>
+                    <div class="texto">
+                        <p>Queremos fomentar una forma de consumir moda más consciente y aprovechar más tiempo las prendas.</p>
+                    </div>
+                    <h2>Moda que vuelve a empezar</h2>
+                    <div class="texto">
+                        <p>Eco Estilo nace con una idea sencilla: una prenda que puede utilizarse no debería convertirse en un residuo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="columna_derecha">
+                <div class="info">
+                    <h2>Sobre nosotros</h2>
+                    <div class="texto">
+                        <p>En Eco Estilo creemos que vestir bien no significa comprar más.</p>
+                        <p>Seleccionamos prendas de segunda mano en buen estado para que puedas encontrar ropa única, ahorrar y contribuir a reducir los residuos textiles.</p>
+                    </div>
+                </div>
+                <div class="ubicacion">
+                    <h2>Nuestra tienda física</h2>
+                    <div class="caja-mapa">
+                        <img src="./img/mapa.png" alt="Mapa" class="img-nosotros">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+        <footer>
+        <div id="redes">
+            <a href="#"><img src="./img/Facebook.png" alt="" class="imagenes_redes"></a>
+            <a href="#"><img src="./img/Instagram.png" alt="" class="imagenes_redes"></a>
+            <a href="#"><img src="./img/TikTok.png" alt="" class="imagenes_redes"></a>
+        </div>
+        <div id="masEnlaces">
+            <div class="enlaces_footer">
+                <a href="./sobreNosotros.html" >Sobre Nosotros</a>
+            </div>
+            <div class="enlaces_footer">
+                <a href="#" >Terminos y Condiciones</a>
+            </div>
+            <div class="enlaces_footer">
+                <a href="#" >Ayuda</a>
+            </div>
+        </div>
+    </footer>
+
+    <!--Codigo para el boton de alto contraste-->
+    <script>
+        onload=()=>{
+            document.getElementsByClassName("boton_altoContraste")[0].addEventListener("click",CambiarAltoContraste)
+        }
+
+        const stylesheetAlterno = document.getElementById('link-contraste');
+
+        function CambiarAltoContraste(){
+            if (stylesheetAlterno.disabled) {
+                stylesheetAlterno.disabled = false; // ACTIVAR el archivo alternativo
+            } else {
+                stylesheetAlterno.disabled = true;  // DESACTIVAR el archivo alternativo
+            }
+        }
+
+    </script>
+
+</body>
+</html>
