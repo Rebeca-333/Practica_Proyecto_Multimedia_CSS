@@ -1,4 +1,4 @@
-:root{
+    :root{
     /*Colores*/
     --color-base1:#415d47;
     --color-base2:#7AAA83;
@@ -552,8 +552,8 @@ main #lista_productos .productos {
     margin-bottom: 0;
 }
 
-/* Video */
-.video-tienda {
+/* Imagenes */
+.img-nosotros {
     width: 100%;
     height: auto;
     border-radius: 6px;
@@ -758,3 +758,4 @@ footer{
     }
 
 }
+    
