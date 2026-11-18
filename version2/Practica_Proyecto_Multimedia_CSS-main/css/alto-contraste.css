@@ -1,0 +1,126 @@
+:root{
+    --color-base1:#415d47;
+    --color-base2:#7aaa83;
+    --color-base3:#d8f5dd;
+    --color-base4:#afe1b5;
+    --color-extra1:#285b64; 
+    --color-extra2:#5dbecf;
+    --color-extra3:#caf1fa;
+    --color-fondo-oscuro:#273a2b;
+    --color-fondo-claro:#ffffff;
+}
+ /*Alto contraste en los elementos que se encuentran en el main en cada pagina*/
+
+/*color fondo del body*/
+body{
+    background-color:var(--color-fondo-oscuro);
+}
+
+/*Productos*/
+
+.texto_novedades,.texto_recomendado{
+    color:var(--color-base4);
+}
+
+.texto_filtro{
+    color: var(--color-base4);
+}
+
+.imagen_producto{
+    border: 3px solid var(--color-base4);
+}
+
+.boton_comprar{
+    background-color: var(--color-base3);
+    color: var(--color-base1);
+    border: 2px solid var(--color-base4);
+}
+
+.boton_comprar:hover{
+    background-color: var(--color-base1);
+    color: var(--color-base3);
+}
+
+.imagenes_productos{
+    border: 3px solid var(--color-base2);
+}
+
+.texto_producto,.texto_precio{
+    color: var(--color-base4);
+}
+
+.texto_producto_descripcion{
+    color:var(--color-base4);
+}
+
+/*Formularios de Inicio Sesion/Registro y Comprar*/
+
+.contenedor .columna{
+    background-color: var(--color-base2);
+    border: 3px solid var(--color-base1);
+}
+
+.contenedor h2 {
+    color: var(--color-fondo-oscuro);
+}
+
+.contenedor label{
+    color: var(--color-fondo-oscuro);
+}
+
+.contenedor input{
+    border: 1px solid var(--color-base1);
+    background-color: var(--color-fondo-oscuro);
+}
+
+.contenedor input:hover {
+    background-color: var(--color-extra2);
+}
+
+.contenedor .boton {
+    background-color: var(--color-base3);
+    color: var(--color-base1);
+    border: 2px solid var(--color-base1);
+}
+
+.boton:hover {
+    background-color: var(--color-extra2);
+}
+
+.contenedor input, .contenedor select{
+    border: 1px solid var(--color-base1);
+    background-color: var(--color-fondo-claro);
+}
+
+.contenedor input:hover, .contenedor select:hover {
+    background-color: var(--color-extra2);
+}
+
+.contenedor label p {
+    background-color: var(--color-fondo-claro);
+    border: 1px solid var(--color-base1);
+}
+
+.contenedor label .precio_total {
+    color: var(--color-base1);
+}
+
+/*Sobre Nosotros*/
+
+.mision, .info, .ubicacion {
+    background-color: var(--color-base2);
+    border: 2px solid var(--color-base1);
+}
+
+.nosotros h2 {
+    color: var(--color-fondo-oscuro);
+}
+
+.texto, .caja-mapa {
+    background-color: var(--color-fondo-claro);
+    border: 1px solid var(--color-base1);
+}
+
+.img-nosotros{
+    border: 2px solid var(--color-base1);
+}
