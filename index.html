@@ -11,24 +11,32 @@
     <link rel="alternate stylesheet" href="./css/alto-contraste.css" title="Alto Contraste" id="link-contraste">
 </head>
 <body>
-    
+   
     <header>
         <div id="menuPrincipal">
-            <a href="./index.html"><img src="./img/Logo.png" alt="logo" class="logo"></a>
+            <div class="fondo_logo">
+                <a href="./index.html"><img src="./multimedia/originales/logo.svg" alt="logo" class="logo"></a>
+            </div>
             <div id="buscador">
                 <form action="#" method="get">
                     <input type="text" name="buscador" id="busca">
-                    <button type="button" class="boton_buscar"><img src="./img/search.svg" alt="buscar" class="imagen_buscar"></button>
+                    <button type="button" class="boton_buscar">
+                        <svg class="lupa" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="11" cy="11" r="6"></circle>
+                            <line x1="21" y1="21" x2="16" y2="16"></line>
+                        </svg>
+                    </button>
                 </form>
             </div>
             <div id="usuario">
                 <a href="./sesion.html" class="inicio_sesion">
-                    <img src="./img/person.svg" alt="" class="imagen_usuario">
+                    <img src="./multimedia/originales/usuario.svg" alt="" class="imagen_usuario">
                     Inicio<br>Sesion
                 </a>
             </div>
             <div id="compra">
-                <a href="./comprar.html" class="carrito"><img src="./img/shopping_cart.svg" alt="carrito" class="imagen_carrito"></a>
+                <img src="./multimedia/originales/cesta.svg" alt="carrito" class="imagen_carrito">
+            </a>
             </div>
             <div id="boton_contraste">
                 <button type="button" class="boton_altoContraste">Alto Contraste</button>
@@ -45,19 +53,27 @@
         </div>
     </header>
     <main>
-        <div id="banner"></div>
+        <div id="banner">
+            <picture>
+                <!--
+                source srcset="./multimedia/originales/imagen.webp" type="image/webp">
+                -->
+                <img src="./multimedia/originales/inicio.jpg" alt="fondo-tienda">
+            </picture>
+        </div>
         <div id="novedades">
             <h2 class="texto_novedades">Novedades:</h2>
             <div id="mostrar_productos">
                 <div class="productos">
                     <a href="./producto-detalle.html" class="enlace_producto_detalle">
-                        <img src="./img/Ropa_1.png" alt="ropa" class="imagenes_productos">
+                        <img src="./multimedia/originales/camiseta-gris.jpg" alt="ropa" class="imagenes_productos">
                         <div class="texto_descripcionSimple">
                             <p class="texto_producto">Vestido</p>
                             <p class="texto_precio">0.00$</p>
                         </div>
                     </a>
                 </div>
+
 
                 <div class="productos">
                     <a href="./producto-detalle.html" class="enlace_producto_detalle">
@@ -68,7 +84,7 @@
                         </div>
                     </a>
                 </div>
-                
+               
                 <div class="productos">
                     <a href="./producto-detalle.html" class="enlace_producto_detalle">
                         <img src="./img/Ropa_1.png" alt="ropa" class="imagenes_productos">
@@ -78,6 +94,7 @@
                         </div>
                     </a>
                 </div>
+
 
                 <div class="productos">
                     <a href="./producto-detalle.html" class="enlace_producto_detalle">
@@ -89,14 +106,14 @@
                     </a>
                 </div>
             </div>
-            
+           
         </div>
     </main>
     <footer>
         <div id="redes">
-            <a href="#"><img src="./img/Facebook.png" alt="" class="imagenes_redes"></a>
-            <a href="#"><img src="./img/Instagram.png" alt="" class="imagenes_redes"></a>
-            <a href="#"><img src="./img/TikTok.png" alt="" class="imagenes_redes"></a>
+            <a href="#"><img src="./multimedia/originales/x.svg" alt="" class="imagenes_redes"></a>
+            <a href="#"><img src="./multimedia/originales/instagram.svg" alt="" class="imagenes_redes"></a>
+            <a href="#"><img src="./multimedia/originales/tiktok.svg" alt="" class="imagenes_redes"></a>
         </div>
         <div id="masEnlaces">
             <div class="enlaces_footer">
@@ -111,13 +128,16 @@
         </div>
     </footer>
 
+
     <!--Codigo para el boton de alto contraste-->
     <script>
         onload=()=>{
             document.getElementsByClassName("boton_altoContraste")[0].addEventListener("click",CambiarAltoContraste)
         }
 
+
         const stylesheetAlterno = document.getElementById('link-contraste');
+
 
         function CambiarAltoContraste(){
             if (stylesheetAlterno.disabled) {
@@ -127,7 +147,10 @@
             }
         }
 
+
     </script>
+
 
 </body>
 </html>
+
