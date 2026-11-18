@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 850" role="img" aria-labelledby="title desc">
+<title id="title">Eco Estilo</title><desc id="desc">Percha verde formada por ramas con hojas y pequeñas estrellas sobre el texto Eco Estilo</desc>
+<g fill="none" stroke="#568F61" stroke-linecap="round" stroke-linejoin="round">
+<!-- gancho orgánico -->
+<path d="M430 211 C433 157 463 118 503 116 C545 113 562 142 558 179 C553 220 522 242 484 263" stroke-width="12"/>
+<!-- brazos de la percha y base -->
+<path d="M484 263 C411 299 306 330 221 385 C178 412 147 439 127 467 C118 480 126 496 148 496 C343 499 657 499 851 496 C875 495 883 479 866 463 C827 419 745 367 654 332 C586 306 533 282 484 263" stroke-width="12"/>
+</g>
+<!-- ramitas -->
+<g stroke="#629D6B" stroke-width="6" fill="none" stroke-linecap="round">
+<path d="M260 366 Q236 341 241 306"/><path d="M284 350 Q304 370 338 369"/>
+<path d="M663 335 Q682 307 672 276"/><path d="M643 328 Q613 300 584 300"/><path d="M690 348 Q662 373 624 368"/>
+<path d="M790 410 Q807 379 800 343"/>
+</g>
+<!-- hojas dibujadas con curvas vectoriales -->
+<g fill="#77AF79" stroke="#568F61" stroke-width="2">
+<path d="M241 339 Q223 305 252 275 Q266 310 241 339Z"/>
+<path d="M283 350 Q315 336 345 369 Q311 382 283 350Z"/>
+<path d="M672 313 Q647 281 659 243 Q692 269 672 313Z"/>
+<path d="M643 328 Q610 334 578 301 Q613 289 643 328Z"/>
+<path d="M690 348 Q657 340 621 374 Q664 385 690 348Z"/>
+<path d="M800 383 Q777 354 790 318 Q819 345 800 383Z"/>
+<path d="M482 495 Q455 466 461 448 Q497 453 510 495Z"/>
+<path d="M425 538 Q447 509 490 512 Q474 539 425 538Z"/>
+</g>
+<!-- destellos con polígonos -->
+<g fill="#79B383">
+<polygon points="381,160 386,177 403,182 386,187 381,204 376,187 359,182 376,177"/>
+<polygon points="750,241 755,258 772,263 755,268 750,285 745,268 728,263 745,258"/>
+<polygon points="180,335 185,351 201,356 185,361 180,377 175,361 159,356 175,351"/>
+<polygon points="519,432 525,450 543,456 525,462 519,480 513,462 495,456 513,450"/>
+<polygon points="556,545 561,560 576,565 561,570 556,585 551,570 536,565 551,560"/>
+<polygon points="869,382 873,394 885,398 873,402 869,414 865,402 853,398 865,394"/>
+</g>
+<text x="500" y="700" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="106" font-weight="bold" letter-spacing="5" fill="#568F61">ECO ESTILO</text>
+</svg>
