@@ -205,11 +205,6 @@ nav {
 
 
 /*MAIN*/
-#banner{
-    background-image: url(../img/banner.png);
-    background-size:auto;
-    height: 20rem;
-}
 
 /*Seccion Novedades y Recomendado*/
 #novedades,#recomendado{
@@ -552,8 +547,8 @@ main #lista_productos .productos {
     margin-bottom: 0;
 }
 
-/* Imagenes */
-.img-nosotros {
+/* Video */
+.video-tienda {
     width: 100%;
     height: auto;
     border-radius: 6px;
