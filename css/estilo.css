@@ -206,6 +206,16 @@ nav {
 
 /*MAIN*/
 
+div.animacion{
+    display: flex;
+    justify-content: center;
+}
+
+img.animacion{
+    max-width: 85%;
+    border-radius: 20px;
+}
+
 /*Seccion Novedades y Recomendado*/
 #novedades,#recomendado{
     margin: 30px
